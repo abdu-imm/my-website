@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3ed;
+    color: #2b1719
+}
+
+.navbar {
+    height: 82px;
+    background: #fffaf5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid #e8ddd2;
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+.logo,
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #6e1d2a;
+    letter-spacing: 4px;
+    font-weight: bold
+}
+
+.logo span,
+.footer-logo span {
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    letter-spacing: 6px;
+    color: #b58a43
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a2925;
+    font-size: 14px
+}
+
+.navbar ul a:hover {
+    color: #9b6b2f
+}
+
+.visit-btn,
+.main-btn {
+    background: #6e1d2a !important;
+    color: #fff !important;
+    padding: 12px 22px !important
+}
+
+.visit-btn:hover,
+.main-btn:hover {
+    background: #9b6b2f !important
+}
+
+.hero {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #eee2d6
+}
+
+.hero-text {
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.small-heading,
+.heading p,
+.page-hero p {
+    color: #a67a35;
+    letter-spacing: 4px;
+    font-size: 11px
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.1;
+    color: #35191d;
+    margin: 20px 0 25px
+}
+
+.hero h1 span {
+    color: #9b6b2f
+}
+
+.hero-text>p:not(.small-heading) {
+    color: #6e625d;
+    line-height: 1.8;
+    max-width: 430px;
+    margin-bottom: 30px
+}
+
+.hero-image {
+    background: url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+
+.main-btn {
+    width: max-content;
+    text-decoration: none;
+    padding: 15px 28px !important;
+    font-size: 13px
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.heading h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 12px 0
+}
+
+.heading span {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #b58a43;
+    margin: auto
+}
+
+.section {
+    padding: 100px 7%
+}
+
+.category-grid,
+.product-grid,
+.contact-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px
+}
+
+.category-card,
+.product {
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(50, 30, 20, .08)
+}
+
+.cat-img,
+.product-image {
+    height: 270px;
+    background-size: cover;
+    background-position: center
+}
+
+.ring,
+.product1 {
+    background-image: url("https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80")
+}
+
+.necklace,
+.product2 {
+    background-image: url("https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80")
+}
+
+.earrings,
+.product3 {
+    background-image: url("https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=700&q=80")
+}
+
+.bangles,
+.product4 {
+    background-image: url("https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80")
+}
+
+.category-card {
+    text-align: center;
+    padding-bottom: 25px
+}
+
+.category-card h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-top: 20px
+}
+
+.category-card p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 8px
+}
+
+.product-info {
+    padding: 20px
+}
+
+.product-info p {
+    color: #a67a35;
+    font-size: 9px;
+    letter-spacing: 2px
+}
+
+.product-info h3 {
+    font-family: Georgia, serif;
+    margin: 10px 0;
+    font-size: 18px
+}
+
+.product-info span {
+    color: #777;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 12px
+}
+
+.product-info strong {
+    color: #6e1d2a
+}
+
+.page-hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(50, 12, 20, .9), rgba(50, 12, 20, .35)), url("https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1600&q=80") center/cover
+}
+
+.page-hero h1 {
+    font: 52px Georgia, serif;
+    margin: 15px 0
+}
+
+.page-hero p:last-child {
+    color: #eee;
+    letter-spacing: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 600px
+}
+
+.bridal-banner {
+    min-height: 500px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(50, 12, 20, .92), rgba(50, 12, 20, .3)), url("https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1600&q=80") center/cover
+}
+
+.bridal-banner h2 {
+    font: 48px Georgia, serif;
+    line-height: 1.15;
+    margin: 20px 0
+}
+
+.light-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #d5ae6a;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 13px;
+    margin-top: 15px
+}
+
+.light-btn:hover {
+    background: #d5ae6a;
+    color: #3b171d
+}
+
+.story {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center
+}
+
+.story-image {
+    height: 500px;
+    background: url("https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80") center/cover
+}
+
+.story-content h2 {
+    font: 42px Georgia, serif;
+    line-height: 1.2;
+    margin: 15px 0 25px
+}
+
+.story-content h2 span {
+    color: #9b6b2f
+}
+
+.story-content p {
+    color: #6c625e;
+    line-height: 1.8;
+    margin-bottom: 18px
+}
+
+.features {
+    display: flex;
+    gap: 35px;
+    margin-top: 35px
+}
+
+.features b {
+    color: #6e1d2a;
+    font: 27px Georgia, serif;
+    display: block
+}
+
+.features small {
+    color: #777
+}
+
+.contact-box {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.contact-box div {
+    background: #fff;
+    text-align: center;
+    padding: 35px 20px
+}
+
+.contact-box h3 {
+    color: #6e1d2a;
+    margin-bottom: 12px
+}
+
+.contact-box p {
+    color: #777;
+    font-size: 14px
+}
+
+footer {
+    background: #35191d;
+    color: #fff;
+    text-align: center;
+    padding: 45px
+}
+
+.footer-logo {
+    color: #d5ae6a
+}
+
+footer p {
+    color: #ddd;
+    margin: 18px 0
+}
+
+footer small {
+    color: #aaa
+}
+
+@media(max-width:900px) {
+    .navbar ul {
+        gap: 12px
+    }
+
+    .visit-btn {
+        display: none
+    }
+
+    .hero {
+        grid-template-columns: 1fr
+    }
+
+    .hero-image {
+        min-height: 450px
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .story {
+        grid-template-columns: 1fr
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .hero-text {
+        padding: 70px 30px
+    }
+
+    .hero h1 {
+        font-size: 42px
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: 1fr
+    }
+
+    .page-hero h1,
+    .bridal-banner h2 {
+        font-size: 38px
+    }
+
+    .story {
+        padding: 70px 25px
+    }
+
+    .features {
+        gap: 15px
+    }
+}
